@@ -73,11 +73,19 @@
     background: transparent;
     border: 1px solid var(--text-secondary);
     color: var(--text-primary);
+    transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
     border-color: var(--text-accent);
     color: var(--text-accent);
+    box-shadow: 0 0 15px rgba(40, 233, 140, 0.2);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--text-accent);
+    box-shadow: 0 0 20px rgba(40, 233, 140, 0.4);
 }
 
 /* Hero Image & Animation */
@@ -94,6 +102,9 @@
     overflow: visible;
     /* For rotating text */
     position: relative;
+    /* Seamless fade effect at the bottom */
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
 .image-container img {
@@ -101,8 +112,9 @@
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
-    filter: grayscale(20%);
-    transition: 0.5s;
+    /* Removed Initial Grayscale for better first impression, or keep it subtle */
+    filter: grayscale(10%); 
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .image-container:hover img {

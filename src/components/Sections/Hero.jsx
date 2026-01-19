@@ -7,12 +7,15 @@ const Hero = () => {
         <SectionWrapper id="hero" className="hero-section">
             <div className="hero-content">
                 <h1 className="title">
-                    Hi, I'm <span className="text-accent">Mahdi Ben Slima</span>,<br />
-                    DevOps & SRE
+                    Building <span className="text-accent">Resilient</span>,<br />
+                    Cloud-Native Systems
                 </h1>
                 <p className="description">
-                    Designing, scaling, and optimizing highly available, multi-cloud infrastructure.
-                    Expertise in AWS, GCP, Azure, and Kubernetes.
+                    I help organizations scale confidently by designing high-availability infrastructure and automating complex deployment pipelines.
+                    <br /><br />
+                    <span style={{ color: 'var(--text-accent)', fontSize: '0.9em', letterSpacing: '1px' }}>
+                        AWS • KUBERNETES • TERRAFORM • CI/CD
+                    </span>
                 </p>
                 <div className="hero-actions">
                     <a href="#portfolio" className="btn btn-primary">My Projects</a>
@@ -26,16 +29,16 @@ const Hero = () => {
                     <a href="https://www.linkedin.com/in/benslimamahdi/" target="_blank" rel="noreferrer">
                         <img src="/Personal photo.png" alt="Mahdi Ben Slima" />
                     </a>
-                    <div className="circle-text">
-                        <svg viewBox="0 0 200 200">
-                            <defs>
-                                <path id="textPath" d="M 100, 100 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
-                            </defs>
-                            <text>
-                                <textPath xlinkHref="#textPath">DevOps • SRE • Cloud • Security •</textPath>
-                            </text>
-                        </svg>
-                    </div>
+                </div>
+                <div className="circle-text">
+                    <svg viewBox="0 0 200 200">
+                        <defs>
+                            <path id="textPath" d="M 100, 100 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                        </defs>
+                        <text>
+                            <textPath xlinkHref="#textPath">DevOps • SRE • Cloud • Security •</textPath>
+                        </text>
+                    </svg>
                 </div>
             </div>
 
