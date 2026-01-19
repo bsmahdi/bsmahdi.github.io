@@ -76,7 +76,7 @@ const Contact = () => {
 
                 <div className="contact-info">
                     <p className="contact-text">
-                        I'm always open to discussing <strong>DevOps</strong> projects, new opportunities,
+                        I'm always open to discussing <strong>DevOps , Cloud and AI</strong> projects, new opportunities,
                         or partnerships.
                     </p>
 

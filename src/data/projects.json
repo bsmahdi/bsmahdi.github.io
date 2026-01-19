@@ -11,7 +11,12 @@
             "Containerized models with Docker",
             "Kubernetes orchestration"
         ],
-        "techStack": ["MLOps", "DVC", "MLflow", "Kubernetes"],
+        "techStack": [
+            "MLOps",
+            "DVC",
+            "MLflow",
+            "Kubernetes"
+        ],
         "githubLink": "https://github.com/benslimamahdi",
         "isRecent": true
     },
@@ -19,105 +24,134 @@
         "id": 2,
         "title": "Multi-Region DR Strategy (Velero)",
         "category": "DevOps",
-        "image": "/images/project-devops.png",
+        "image": "/images/project-velero.png",
         "description": "Engineered a disaster recovery strategy for Kubernetes using Velero to backup application state from AWS to Azure, achieving an RPO of less than 1 hour.",
         "keyAchievements": [
             "Cross-cloud backup (AWS to Azure)",
             "RPO < 1 hour",
             "Automated restoration drills"
         ],
-        "techStack": ["Kubernetes", "Velero", "AWS", "Azure"],
+        "techStack": [
+            "Kubernetes",
+            "Velero",
+            "AWS",
+            "Azure"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     },
     {
         "id": 3,
         "title": "Zero Trust with Istio",
         "category": "DevOps",
-        "image": "/images/project-security.png",
+        "image": "/images/project-istio.png",
         "description": "Implemented mutual TLS (mTLS) and granular access policies for a microservices application to enforce zero-trust security and observability.",
         "keyAchievements": [
             "mTLS implementation",
             "Granular access policies",
             "Enhanced observability"
         ],
-        "techStack": ["Istio", "Security", "Prometheus"],
+        "techStack": [
+            "Istio",
+            "Security",
+            "Prometheus"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     },
     {
         "id": 4,
         "title": "Vagrant K8s Cluster & CI/CD",
         "category": "DevOps",
-        "image": "/images/project-devops.png",
+        "image": "/images/project-k8s.png",
         "description": "Automated multi-node Kubernetes cluster provisioning with Vagrant and configured full Jenkins CI/CD pipelines.",
         "keyAchievements": [
             "Automated provisioning",
             "Full CI/CD pipeline",
             "Infrastructure as Code"
         ],
-        "techStack": ["Vagrant", "Jenkins", "Helm"],
+        "techStack": [
+            "Vagrant",
+            "Jenkins",
+            "Helm"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     },
     {
         "id": 5,
         "title": "Azure Sentinel SIEM",
         "category": "DevOps",
-        "image": "/images/project-security.png",
+        "image": "/images/project-sentinel.png",
         "description": "Deployed cloud-native SIEM for threat monitoring and integrated an SSH honeypot to analyze intrusion attempts.",
         "keyAchievements": [
             "Cloud-native SIEM",
             "Threat monitoring",
             "Honeypot integration"
         ],
-        "techStack": ["Azure Sentinel", "Security", "Honeypot"],
+        "techStack": [
+            "Azure Sentinel",
+            "Security",
+            "Honeypot"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     },
     {
         "id": 6,
         "title": "Wazuh Security Monitoring",
         "category": "DevOps",
-        "image": "/images/project-security.png",
+        "image": "/images/project-wazuh.png",
         "description": "Deployed Wazuh for intrusion detection across virtual machines, cutting incident response time by 35% with dynamic dashboards.",
         "keyAchievements": [
             "Intrusion detection",
             "Dynamic dashboards",
             "Reduced incident response time"
         ],
-        "techStack": ["Wazuh", "SIEM", "Incident Response"],
+        "techStack": [
+            "Wazuh",
+            "SIEM",
+            "Incident Response"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     },
     {
         "id": 7,
         "title": "DevSecOps Pipeline Integration",
         "category": "DevOps",
-        "image": "/images/project-devops.png",
+        "image": "/images/project-devsecops.png",
         "description": "Integrated security scanning (SAST/DAST) into existing CI/CD pipelines to ensure code security before deployment.",
         "keyAchievements": [
             "SAST/DAST integration",
             "Automated vulnerability scanning",
             "Compliance enforcement"
         ],
-        "techStack": ["Jenkins", "SonarQube", "OWASP ZAP"],
+        "techStack": [
+            "Jenkins",
+            "SonarQube",
+            "OWASP ZAP"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     },
     {
         "id": 8,
         "title": "AI Chatbot for Customer Support",
         "category": "AI",
-        "image": "/images/project-mlops.png",
+        "image": "/images/project-chatbot.png",
         "description": "Built an NLP-based chatbot using Python and TensorFlow to automate customer support queries.",
         "keyAchievements": [
             "NLP model training",
             "Real-time query resolution",
             "Integration with web portal"
         ],
-        "techStack": ["Python", "TensorFlow", "NLP"],
+        "techStack": [
+            "Python",
+            "TensorFlow",
+            "NLP"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     },
     {
         "id": 9,
         "title": "Industry Best Practices Recommender",
         "category": "AI",
-        "image": "/images/project-mlops.png",
+        "image": "/images/project-rag.png",
         "description": "Developed an AI system leveraging Retrieval-Augmented Generation (RAG) with LangChain and Hugging Face embeddings to recommend compliance and process improvements.",
         "details": "Hosted embeddings and retrieval pipeline via GCP Vertex AI with scalable APIs. Implemented caching and batch inference to improve performance by 30%.",
         "keyAchievements": [
@@ -125,7 +159,12 @@
             "GCP Vertex AI Hosting",
             "Performance improved by 30%"
         ],
-        "techStack": ["RAG", "LangChain", "Hugging Face", "GCP Vertex AI"],
+        "techStack": [
+            "RAG",
+            "LangChain",
+            "Hugging Face",
+            "GCP Vertex AI"
+        ],
         "githubLink": "https://github.com/benslimamahdi",
         "isRecent": true
     },
@@ -133,7 +172,7 @@
         "id": 10,
         "title": "AI Personal Assistant Agent",
         "category": "AI",
-        "image": "/images/project-mlops.png",
+        "image": "/images/project-assistant.png",
         "description": "Developed a multi-agent personal assistant capable of scheduling, summarizing text, retrieving contextual information, and reasoning across tools.",
         "details": "Integrated LangChain, Gemini API, and custom Python logic for dynamic task execution. Designed structured prompts and evaluation rubrics to measure reasoning accuracy.",
         "keyAchievements": [
@@ -141,7 +180,11 @@
             "Gemini API Integration",
             "Dynamic task execution"
         ],
-        "techStack": ["LangChain", "Gemini API", "Python"],
+        "techStack": [
+            "LangChain",
+            "Gemini API",
+            "Python"
+        ],
         "githubLink": "https://github.com/benslimamahdi",
         "isRecent": true
     },
@@ -149,7 +192,7 @@
         "id": 11,
         "title": "YouTube Comment Classification",
         "category": "AI",
-        "image": "/images/project-mlops.png",
+        "image": "/images/project-nlp.png",
         "description": "Implemented an Arabic NLP pipeline for automated moderation of user comments using Transformers and BERT-based models.",
         "details": "Deployed inference endpoint as a REST API with FastAPI and Docker, monitored via Prometheus. Reduced manual moderation by 60%.",
         "keyAchievements": [
@@ -157,14 +200,19 @@
             "FastAPI & Docker deployment",
             "Manual moderation reduced by 60%"
         ],
-        "techStack": ["NLP", "BERT", "FastAPI", "Docker"],
+        "techStack": [
+            "NLP",
+            "BERT",
+            "FastAPI",
+            "Docker"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     },
     {
         "id": 12,
         "title": "Cure Companion – Medical Chat",
         "category": "AI",
-        "image": "/images/project-mlops.png",
+        "image": "/images/project-medical.png",
         "description": "Fine-tuned a T5-small model on curated medical data to assist patients with symptom interpretation and treatment insights.",
         "details": "Developed a multi-turn conversation interface with LangChain + Streamlit. Deployed backend as a containerized microservice on Kubernetes.",
         "keyAchievements": [
@@ -172,21 +220,30 @@
             "Multi-turn conversation",
             "Kubernetes deployment"
         ],
-        "techStack": ["T5 Model", "LangChain", "Streamlit", "Kubernetes"],
+        "techStack": [
+            "T5 Model",
+            "LangChain",
+            "Streamlit",
+            "Kubernetes"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     },
     {
         "id": 13,
         "title": "Resume Anonymization System",
         "category": "AI",
-        "image": "/images/project-mlops.png",
+        "image": "/images/project-privacy.png",
         "description": "Built a tool leveraging Presidio for anonymizing resumes and removing bias in AI hiring systems.",
         "keyAchievements": [
             "Resume anonymization",
             "Bias removal",
             "Privacy preservation"
         ],
-        "techStack": ["Presidio", "NLP", "Python"],
+        "techStack": [
+            "Presidio",
+            "NLP",
+            "Python"
+        ],
         "githubLink": "https://github.com/benslimamahdi"
     }
 ]
