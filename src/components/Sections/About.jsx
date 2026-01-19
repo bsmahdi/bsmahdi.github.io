@@ -12,7 +12,7 @@ const About = () => {
                 <div className="bio-card">
                     <h3>Who am I?</h3>
                     <p>
-                        I am a <strong>DevOps & Site Reliability Engineer (SRE)</strong> based in Sfax, Tunisia (open to relocation).
+                        I am a <strong>DevOps & Site Reliability Engineer (SRE)</strong> based in Tunisia.
                         I specialize in designing, scaling, and optimizing highly available, multi-cloud infrastructure.
                     </p>
                     <p>
@@ -28,7 +28,7 @@ const About = () => {
                         </div>
                         <div className="info-item">
                             <span className="label">Email</span>
-                            <span className="value">benslima.mahdi@gmail.com</span>
+                            <span className="value">mahdi@devaura.pro</span>
                         </div>
                         <div className="info-item">
                             <span className="label">Languages</span>

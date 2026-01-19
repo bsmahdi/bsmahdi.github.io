@@ -6,9 +6,9 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-links">
-                    <a href="mailto:benslima.mahdi@gmail.com" className="footer-link">
+                    <a href="mailto:mahdi@devaura.pro" className="footer-link">
                         <i className="las la-envelope"></i>
-                        <span>benslima.mahdi@gmail.com</span>
+                        <span>mahdi@devaura.pro</span>
                     </a>
                     <a href="https://www.linkedin.com/in/benslimamahdi/" target="_blank" rel="noreferrer" className="footer-link">
                         <i className="lab la-linkedin-in"></i>

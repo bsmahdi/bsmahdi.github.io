@@ -36,7 +36,7 @@ const Contact = () => {
                             <div className="icon"><i className="las la-map-marker"></i></div>
                             <div>
                                 <span>Location</span>
-                                <h4>Sfax, Tunisia (Open to Relocate)</h4>
+                                <h4>Tunisia</h4>
                             </div>
                         </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                             <div className="icon"><i className="las la-envelope"></i></div>
                             <div>
                                 <span>Email</span>
-                                <h4>benslima.mahdi@gmail.com</h4>
+                                <h4>mahdi@devaura.pro</h4>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                         <a href="https://linkedin.com/in/benslimamahdi" target="_blank" rel="noreferrer" className="social-btn">
                             <i className="lab la-linkedin-in"></i>
                         </a>
-                        <a href="mailto:benslima.mahdi@gmail.com" className="social-btn">
+                        <a href="mailto:mahdi@devaura.pro" className="social-btn">
                             <i className="las la-envelope"></i>
                         </a>
                         {/* Example GitHub or other link */}
