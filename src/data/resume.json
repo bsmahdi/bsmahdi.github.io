@@ -51,6 +51,16 @@
             "id": 1,
             "date": "2025 - Present",
             "title": "Co-Founder & CTO",
+            "organization": "Devaura",
+            "description": [
+                "Leading technical strategy and development for the agency.",
+                "Overseeing DevOps initiatives, cloud infrastructure projects, and client solutions."
+            ]
+        },
+        {
+            "id": 2,
+            "date": "2025 - Present",
+            "title": "Co-Founder & CTO",
             "organization": "Beely",
             "description": [
                 "Co-founded a startup with a French team, securing incubation at the Clermont Ferrand Incubator.",
@@ -58,7 +68,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "date": "2024 - 2025",
             "title": "Co-Founder & Operations Lead",
             "organization": "Khabini (Small Business: AI Art Sales)",
@@ -68,21 +78,11 @@
             ]
         },
         {
-            "id": 3,
+            "id": 4,
             "date": "2025 - 2026",
             "title": "Young Professionals Coordinator",
             "organization": "IEEE Future Networks Forum",
             "description": "Coordinating professional activities and networking events for young professionals within the forum."
-        },
-        {
-            "id": 4,
-            "date": "2025 - 2026",
-            "title": "Co-Founder & Operations Lead",
-            "organization": "Devaura (Freelance)",
-            "description": [
-                "Developed and launched the official website.",
-                "Leading DevOps initiatives and taking on freelance DevOps projects."
-            ]
         },
         {
             "id": 5,
