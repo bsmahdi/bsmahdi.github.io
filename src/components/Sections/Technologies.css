@@ -1,0 +1,100 @@
+.technologies-section {
+    padding: 60px 0;
+    text-align: center;
+    background: transparent;
+    /* Or a slightly different shade if desired */
+    overflow: hidden;
+}
+
+.tech-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.tech-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    /* Add gradient masks for fade effect at edges */
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+    display: flex;
+    gap: 60px;
+    width: max-content;
+    /* Ensure container fits all items */
+    animation: scroll 30s linear infinite;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.tech-item:hover {
+    color: var(--text-accent);
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover .tech-icon {
+    transform: scale(1.1);
+    color: var(--text-accent);
+    /* Or keep original colored if preferred */
+}
+
+/* Optional: Make icons colored by default if you prefer avoiding monochrome */
+/* .tech-icon.colored { color: initial; } */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Scroll halfway because we duplicated the list */
+    }
+}
+
+/* Pause animation on hover for better UX */
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+    .marquee-content {
+        gap: 40px;
+        animation-duration: 20s;
+    }
+
+    .tech-item {
+        font-size: 1rem;
+    }
+
+    .tech-icon {
+        font-size: 2rem;
+    }
+}

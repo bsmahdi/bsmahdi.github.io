@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionWrapper from '../Layout/SectionWrapper';
+import Technologies from './Technologies';
 import './Hero.css';
 
 const Hero = () => {
@@ -13,13 +14,14 @@ const Hero = () => {
                 <p className="description">
                     I help organizations scale confidently by designing high-availability infrastructure and automating complex deployment pipelines.
                     <br /><br />
-                    <span style={{ color: 'var(--text-accent)', fontSize: '0.9em', letterSpacing: '1px' }}>
-                        AWS • KUBERNETES • TERRAFORM • CI/CD
-                    </span>
                 </p>
                 <div className="hero-actions">
                     <a href="#portfolio" className="btn btn-primary">My Projects</a>
                     <a href="/Mahdi Ben Slima Resume English Version.pdf" download className="btn btn-outline">Download Resume <i className="las la-download"></i></a>
+                </div>
+
+                <div className="hero-tech-wrapper">
+                    <Technologies />
                 </div>
             </div>
 

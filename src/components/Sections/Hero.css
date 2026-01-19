@@ -92,6 +92,8 @@
 .hero-image {
     position: relative;
     margin-right: 40px;
+    margin-top: -250px;
+    /* Shift image up slightly */
 }
 
 .image-container {
@@ -113,7 +115,7 @@
     object-fit: cover;
     border-radius: 30px;
     /* Removed Initial Grayscale for better first impression, or keep it subtle */
-    filter: grayscale(10%); 
+    filter: grayscale(10%);
     transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -208,5 +210,44 @@
 
     .hero-actions {
         justify-content: center;
+    }
+}
+
+.hero-tech-wrapper {
+    margin-top: 80px;
+    /* Push marquee lower */
+    width: 60vw;
+    /* Limit width to align better with hero text/image balance */
+    max-width: 800px;
+    margin-left: -20px;
+    /* Slight offset to align with text */
+}
+
+.hero-tech-wrapper .marquee-container {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    padding: 10px 0;
+}
+
+.hero-tech-wrapper .tech-item {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+.hero-tech-wrapper .tech-item:hover {
+    opacity: 1;
+    color: var(--text-accent);
+}
+
+.hero-tech-wrapper .tech-icon {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 991px) {
+    .hero-tech-wrapper {
+        margin-top: 40px;
+        width: 100%;
+        margin-left: 0;
     }
 }

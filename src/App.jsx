@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './components/Layout/Sidebar';
 import Hero from './components/Sections/Hero';
+
 import About from './components/Sections/About';
 import Resume from './components/Sections/Resume';
 import Portfolio from './components/Sections/Portfolio';
@@ -19,6 +20,8 @@ function App() {
           {/* Hero Component */}
           <Hero />
         </section>
+
+
 
         <section id="about" className="section-container">
           {/* About Component */}
