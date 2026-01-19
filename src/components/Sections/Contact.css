@@ -1,51 +1,67 @@
+.contact-section {
+    padding-bottom: 50px;
+}
+
 .contact-container {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 80px;
-    margin-top: 20px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    flex: 1;
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid var(--border-light);
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    margin-bottom: 25px;
 }
 
 .form-group label {
-    font-size: 13px;
-    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
     color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .form-group input,
 .form-group textarea {
-    background: transparent;
+    width: 100%;
+    background: var(--bg-primary);
     border: 1px solid var(--border-light);
-    /* Fixed variable name */
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     color: var(--text-primary);
-    font-family: inherit;
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
+    outline: none;
     border-color: var(--text-accent);
+    box-shadow: 0 0 15px rgba(40, 233, 140, 0.1);
+}
+
+.contact-info {
+    flex: 0.8;
 }
 
 .contact-text {
-    font-size: 18px;
+    font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.contact-text strong {
+    color: var(--text-primary);
 }
 
 .info-list {
@@ -69,20 +85,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    color: var(--text-primary);
+    font-size: 1.4rem;
+    color: var(--text-accent);
 }
 
 .info-row span {
-    font-size: 12px;
-    text-transform: uppercase;
+    display: block;
+    font-size: 0.85rem;
     color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 .info-row h4 {
-    font-size: 16px;
+    font-size: 1.1rem;
+    color: var(--text-primary);
     font-weight: 500;
-    margin-top: 5px;
 }
 
 .social-links {
@@ -98,29 +116,98 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: var(--text-secondary);
-    transition: 0.3s;
+    background: transparent;
+    transition: all 0.3s ease;
 }
 
 .social-btn:hover {
-    color: var(--text-accent);
     border-color: var(--text-accent);
+    color: var(--text-accent);
     transform: translateY(-3px);
 }
 
-/* Responsive */
-@media (max-width: 991px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 50px;
+/* Status Modal Styles */
+.status-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+}
+
+.status-modal {
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    border: 1px solid var(--border-light);
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    animation: scaleUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.status-modal i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.success-icon {
+    color: var(--text-accent);
+}
+
+.error-icon {
+    color: #ff4444;
+}
+
+.status-modal h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.status-modal p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
 
-    .contact-form {
-        order: 2;
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-container {
+        flex-direction: column;
     }
 
     .contact-info {
-        order: 1;
+        width: 100%;
     }
 }

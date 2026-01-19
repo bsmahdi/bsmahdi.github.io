@@ -1,28 +1,77 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SectionWrapper from '../Layout/SectionWrapper';
 import './Contact.css';
 
 const Contact = () => {
+    const [status, setStatus] = useState(""); // "", "SUBMITTING", "SUCCESS", "ERROR"
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+
+        setStatus("SUBMITTING");
+
+        try {
+            const response = await fetch("https://formspree.io/f/xpqqrjqj", {
+                method: "POST",
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setStatus("SUCCESS");
+                form.reset();
+            } else {
+                setStatus("ERROR");
+            }
+        } catch (error) {
+            setStatus("ERROR");
+        }
+    };
+
     return (
         <SectionWrapper id="contact" className="contact-section">
 
             <h2 className="section-title">Let's <span className="text-accent">Connect!</span></h2>
 
             <div className="contact-container">
-                <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+                <form className="contact-form" onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label>Full Name</label>
-                        <input type="text" placeholder="Your Name" required />
+                        <input type="text" name="name" placeholder="Your Name" required />
                     </div>
                     <div className="form-group">
                         <label>Email Address</label>
-                        <input type="email" placeholder="Your Email" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
                     </div>
                     <div className="form-group">
                         <label>Message</label>
-                        <textarea placeholder="Write your message here..." rows="5" required></textarea>
+                        <textarea name="message" placeholder="Write your message here..." rows="5" required></textarea>
                     </div>
-                    <button type="submit" className="btn btn-primary">Send Message <i className="las la-paper-plane"></i></button>
+
+                    {status === "SUCCESS" && (
+                        <p className="success-message" style={{ color: 'var(--text-accent)', marginBottom: '1rem' }}>
+                            <i className="las la-check-circle"></i> Message sent successfully! I'll get back to you soon.
+                        </p>
+                    )}
+
+                    {status === "ERROR" && (
+                        <p className="error-message" style={{ color: '#ff4444', marginBottom: '1rem' }}>
+                            <i className="las la-exclamation-circle"></i> Oops! There was a problem sending your message.
+                        </p>
+                    )}
+
+                    <button
+                        type="submit"
+                        className="btn btn-primary"
+                        disabled={status === "SUBMITTING"}
+                    >
+                        {status === "SUBMITTING" ? "Sending..." : "Send Message"}
+                        {status !== "SUBMITTING" && <i className="las la-paper-plane"></i>}
+                    </button>
                 </form>
 
                 <div className="contact-info">
