@@ -245,5 +245,25 @@
             "Python"
         ],
         "githubLink": "https://github.com/benslimamahdi/resume-anonymization-system"
+    },
+    {
+        "id": 14,
+        "title": "DevAura.pro",
+        "category": "Dev",
+        "image": "/images/devaura.png",
+        "description": "The official website for Devaura, a specialized agency providing expert DevOps, MLOps, and Cloud Architecture services.",
+        "details": "Built with Next.js and React, this responsive website showcases the agency's services, core technologies, and value proposition using a modern tech stack.",
+        "keyAchievements": [
+            "Modern Next.js Architecture",
+            "High Performance",
+            "Responsive UI"
+        ],
+        "techStack": [
+            "Next.js",
+            "React",
+            "Tailwind CSS"
+        ],
+        "demoLink": "https://devaura.pro",
+        "isRecent": true
     }
 ]
