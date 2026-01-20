@@ -46,30 +46,32 @@ const ProjectCard = ({ project }) => {
                             ))}
                         </div>
 
-                        <div className="card-links">
-                            {project.githubLink && (
-                                <a
-                                    href={project.githubLink}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="card-link-btn github"
-                                    onClick={handleLinkClick}
-                                >
-                                    <i className="lab la-github"></i> GitHub
-                                </a>
-                            )}
-                            {project.demoLink && (
-                                <a
-                                    href={project.demoLink}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="card-link-btn demo"
-                                    onClick={handleLinkClick}
-                                >
-                                    <i className="las la-external-link-alt"></i> Demo
-                                </a>
-                            )}
-                        </div>
+                        {(project.githubLink || project.demoLink) && (
+                            <div className="card-links">
+                                {project.githubLink && (
+                                    <a
+                                        href={project.githubLink}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="card-link-btn github"
+                                        onClick={handleLinkClick}
+                                    >
+                                        <i className="lab la-github"></i> GitHub
+                                    </a>
+                                )}
+                                {project.demoLink && (
+                                    <a
+                                        href={project.demoLink}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="card-link-btn demo"
+                                        onClick={handleLinkClick}
+                                    >
+                                        <i className="las la-external-link-alt"></i> Demo
+                                    </a>
+                                )}
+                            </div>
+                        )}
                     </div>
                 </div>
 

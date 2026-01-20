@@ -17,7 +17,7 @@
             "MLflow",
             "Kubernetes"
         ],
-        "githubLink": "https://github.com/benslimamahdi",
+        "_githubLink": "https://github.com/benslimamahdi/mlops-automation-pipeline",
         "isRecent": true
     },
     {
@@ -37,7 +37,7 @@
             "AWS",
             "Azure"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "githubLink": "https://github.com/benslimamahdi/multi-region-dr-strategy-velero"
     },
     {
         "id": 3,
@@ -55,11 +55,11 @@
             "Security",
             "Prometheus"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "_githubLink": "https://github.com/benslimamahdi/zero-trust-istio"
     },
     {
         "id": 4,
-        "title": "Vagrant K8s Cluster & CI/CD",
+        "title": "²grant K8s Cluster & CI/CD",
         "category": "DevOps",
         "image": "/images/project-k8s.png",
         "description": "Automated multi-node Kubernetes cluster provisioning with Vagrant and configured full Jenkins CI/CD pipelines.",
@@ -73,7 +73,7 @@
             "Jenkins",
             "Helm"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "githubLink": "https://github.com/benslimamahdi/vagrant-k8s-cicd"
     },
     {
         "id": 5,
@@ -91,7 +91,7 @@
             "Security",
             "Honeypot"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "githubLink": "https://github.com/benslimamahdi/azure-sentinel-siem"
     },
     {
         "id": 6,
@@ -109,7 +109,7 @@
             "SIEM",
             "Incident Response"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "_githubLink": "https://github.com/benslimamahdi/wazuh-security-monitoring"
     },
     {
         "id": 7,
@@ -127,7 +127,7 @@
             "SonarQube",
             "OWASP ZAP"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "_githubLink": "https://github.com/benslimamahdi/devsecops-pipeline-integration"
     },
     {
         "id": 8,
@@ -145,7 +145,7 @@
             "TensorFlow",
             "NLP"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "githubLink": "https://github.com/benslimamahdi/ai-chatbot-customer-support"
     },
     {
         "id": 9,
@@ -165,7 +165,7 @@
             "Hugging Face",
             "GCP Vertex AI"
         ],
-        "githubLink": "https://github.com/benslimamahdi",
+        "githubLink": "https://github.com/benslimamahdi/industry-practices-rag-recommender",
         "isRecent": true
     },
     {
@@ -185,7 +185,7 @@
             "Gemini API",
             "Python"
         ],
-        "githubLink": "https://github.com/benslimamahdi",
+        "_githubLink": "https://github.com/benslimamahdi/ai-personal-assistant-agent",
         "isRecent": true
     },
     {
@@ -206,7 +206,7 @@
             "FastAPI",
             "Docker"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "githubLink": "https://github.com/benslimamahdi/youtube-comment-classification"
     },
     {
         "id": 12,
@@ -226,7 +226,7 @@
             "Streamlit",
             "Kubernetes"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "githubLink": "https://github.com/benslimamahdi/cure-companion-medical-chat"
     },
     {
         "id": 13,
@@ -244,6 +244,6 @@
             "NLP",
             "Python"
         ],
-        "githubLink": "https://github.com/benslimamahdi"
+        "githubLink": "https://github.com/benslimamahdi/resume-anonymization-system"
     }
 ]
