@@ -35,7 +35,7 @@ const Contact = () => {
     return (
         <SectionWrapper id="contact" className="contact-section">
 
-            <h2 className="section-title">Let's <span className="text-accent">Connect!</span></h2>
+            <h2 className="section-title">Let's build something <span className="text-accent"> amazing together!</span></h2>
 
             <div className="contact-container">
                 <form className="contact-form" onSubmit={handleSubmit}>
