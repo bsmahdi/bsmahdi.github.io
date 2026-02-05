@@ -32,13 +32,7 @@ const ProjectCard = ({ project }) => {
                         <span className={`card-category category-${project.category.toLowerCase()}`}>{project.category}</span>
                         <h3>{project.title}</h3>
 
-                        {project.keyAchievements && (
-                            <ul className="key-achievements">
-                                {project.keyAchievements.map((item, index) => (
-                                    <li key={index}><i className="las la-check-circle"></i> {item}</li>
-                                ))}
-                            </ul>
-                        )}
+
 
                         <div className="tech-tags">
                             {project.techStack.map((tech, index) => (
