@@ -1,5 +1,29 @@
 [
     {
+        "id": 15,
+        "title": "Internal Developer Platform (IDP)",
+        "category": "DevOps",
+        "image": "/images/project-idp.png",
+        "description": "Self-service platform automating environment bootstrapping and security compliance using Backstage and ArgoCD.",
+        "details": "Developed a Backstage-based IDP with GitOps workflows for multi-cluster management. Integrated HashiCorp Vault and OPA/Kyverno to enforce Zero-Trust security and automate compliance benchmarks.",
+        "keyAchievements": [
+            "Reduced onboarding from days to minutes",
+            "100% environment consistency with GitOps",
+            "Zero-Trust model with Vault & OPA",
+            "Automated SOC2/GDPR compliance"
+        ],
+        "techStack": [
+            "Backstage",
+            "Argo CD",
+            "Vault",
+            "OPA",
+            "Kyverno",
+            "Kubernetes"
+        ],
+        "githubLink": "https://github.com/benslimamahdi/Internal-Developer-Platform",
+        "isRecent": true
+    },
+    {
         "id": 1,
         "title": "MLOps Automation Pipeline",
         "category": "AI",
@@ -59,7 +83,7 @@
     },
     {
         "id": 4,
-        "title": "²grant K8s Cluster & CI/CD",
+        "title": "Vagrant K8s Cluster & CI/CD",
         "category": "DevOps",
         "image": "/images/project-k8s.png",
         "description": "Automated multi-node Kubernetes cluster provisioning with Vagrant and configured full Jenkins CI/CD pipelines.",
