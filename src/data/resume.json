@@ -2,6 +2,14 @@
     "experience": [
         {
             "id": 1,
+            "date": "Sep 2025 - Present",
+            "title": "Tech Lead",
+            "company": "Devaura",
+            "location": "Sfax, Tunisia",
+            "description": "Directed end-to-end technical delivery for the first 3 enterprise clients, managing the full lifecycle from architecture design to deployment on OVH Cloud."
+        },
+        {
+            "id": 2,
             "date": "Feb 2025 - Sep 2025",
             "title": "DevOps Intern",
             "company": "Oneex",
@@ -9,7 +17,7 @@
             "description": "Architected and automated multi-zone cloud infrastructure using Terraform, Ansible, and ArgoCD. Implemented proactive monitoring and alerting systems (Grafana, Prometheus)."
         },
         {
-            "id": 2,
+            "id": 3,
             "date": "Jun 2024 - Jul 2024",
             "title": "DevOps Intern",
             "company": "PerfectSoft",
@@ -17,7 +25,7 @@
             "description": "Deployed Azure-based monitoring stack (Prometheus, Grafana, Loki). Implemented Infrastructure-as-Code (IaC) using Terraform."
         },
         {
-            "id": 3,
+            "id": 4,
             "date": "Jun 2023 - Aug 2023",
             "title": "DevOps Intern",
             "company": "DataSphera",
@@ -25,7 +33,7 @@
             "description": "Developed and deployed highly efficient CI/CD pipelines in GitLab CI for EKS clusters. Integrated security scanning and compliance tools (Trivy, SonarQube)."
         },
         {
-            "id": 4,
+            "id": 5,
             "date": "Jul 2022 - Aug 2022",
             "title": "IT Intern",
             "company": "STAM Sfax",
