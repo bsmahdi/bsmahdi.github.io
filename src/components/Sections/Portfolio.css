@@ -365,3 +365,20 @@
 .card-link-btn i {
     font-size: 1.1rem;
 }
+
+.portfolio-subtitle-note {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+    margin-top: -15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+.portfolio-subtitle-note i {
+    color: var(--text-accent);
+    margin-right: 5px;
+}

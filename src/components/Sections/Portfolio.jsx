@@ -117,6 +117,9 @@ const Portfolio = () => {
         <SectionWrapper id="portfolio" className="portfolio-section">
 
             <h2 className="section-title">My <span className="text-accent">Projects</span></h2>
+            <p className="portfolio-subtitle-note">
+                <i className="las la-info-circle"></i> Projects without GitHub links aren't open source, however please feel free to request a demo via the contacts below.
+            </p>
 
             <div className="portfolio-controls">
                 <div className="search-container">

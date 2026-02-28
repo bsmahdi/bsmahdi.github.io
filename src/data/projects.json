@@ -1,5 +1,28 @@
 [
     {
+        "id": 16,
+        "title": "AI-Powered Job Application Automator",
+        "category": "AI",
+        "image": "/images/project-ai-job-auto.png",
+        "description": "An end-to-end automation tool that parses job descriptions, generates tailored resumes and cover letters using LLMs, and automates the application process.",
+        "details": "Engineered a multi-agent system using LangChain and GPT-4 to analyze job requirements and match them with user experience in real-time. Integrated Selenium for automated form filling and application tracking across multiple platforms (LinkedIn, Indeed, etc.).",
+        "keyAchievements": [
+            "Tailored content with 95% relevance score",
+            "Automated over 50 applications per hour",
+            "Real-time tracking and dashboard",
+            "Bypassed common bot detection filters"
+        ],
+        "techStack": [
+            "LangChain",
+            "OpenAI GPT-4",
+            "Selenium",
+            "Python",
+            "FastAPI",
+            "PostgreSQL"
+        ],
+        "isRecent": true
+    },
+    {
         "id": 15,
         "title": "Internal Developer Platform (IDP)",
         "category": "DevOps",

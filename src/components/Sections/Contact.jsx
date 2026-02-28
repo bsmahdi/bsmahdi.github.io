@@ -104,6 +104,12 @@ const Contact = () => {
                                 <h4>mahdi@devaura.pro</h4>
                             </div>
                         </div>
+
+                        <div className="booking-row">
+                            <a href="https://calendar.app.google/DPfG6c2mV6bvvGg78" target="_blank" rel="noreferrer" className="btn btn-primary booking-btn">
+                                <i className="las la-calendar-check"></i> Book a Meeting
+                            </a>
+                        </div>
                     </div>
 
                     <div className="social-links">
