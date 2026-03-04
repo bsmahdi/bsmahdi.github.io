@@ -10,7 +10,7 @@ const Footer = () => {
                         <i className="las la-envelope"></i>
                         <span>mahdi@devaura.pro</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/benslimamahdi/" target="_blank" rel="noreferrer" className="footer-link">
+                    <a href="https://www.linkedin.com/in/mahdibs" target="_blank" rel="noreferrer" className="footer-link">
                         <i className="lab la-linkedin-in"></i>
                         <span>LinkedIn</span>
                     </a>

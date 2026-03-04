@@ -113,7 +113,7 @@ const Contact = () => {
                     </div>
 
                     <div className="social-links">
-                        <a href="https://linkedin.com/in/benslimamahdi" target="_blank" rel="noreferrer" className="social-btn">
+                        <a href="https://www.linkedin.com/in/mahdibs" target="_blank" rel="noreferrer" className="social-btn">
                             <i className="lab la-linkedin-in"></i>
                         </a>
                         <a href="mailto:mahdi@devaura.pro" className="social-btn">
