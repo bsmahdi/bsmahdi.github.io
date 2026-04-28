@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-:root {
+:root, :root[data-theme="dark"] {
   /* Colors - Dark/Neon Theme inspired by Relome */
   --bg-primary: #0b0b0f;
   --bg-secondary: #121218;
@@ -19,6 +19,20 @@
   /* Spacing */
   --sidebar-width: 280px;
   --container-padding: 60px;
+}
+
+:root[data-theme="light"] {
+  /* Colors - Light Theme */
+  --bg-primary: #f5f5f7;
+  --bg-secondary: #ffffff;
+  --bg-card: #eaeaec;
+
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --text-accent: #10a359;
+  /* Darker Green for better readability */
+
+  --border-light: #e0e0e0;
 }
 
 * {

@@ -1,13 +1,19 @@
 import React from 'react';
+import { useTheme } from '../../hooks/useTheme';
 import './Sidebar.css';
 
 const Sidebar = () => {
+    const { theme, toggleTheme } = useTheme();
+
     return (
         <aside className="sidebar">
             <div className="sidebar-header">
                 <div className="logo">
                     <span className="logo-text">BSM<span className="logo-dot">.</span></span>
                 </div>
+                <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
+                    <i className={theme === 'dark' ? 'las la-sun' : 'las la-moon'}></i>
+                </button>
             </div>
 
             <nav className="nav-menu">

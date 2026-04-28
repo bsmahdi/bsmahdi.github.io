@@ -14,6 +14,13 @@
     /* Ensure background is solid */
 }
 
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .sidebar-header .logo {
     font-family: 'Orbitron', sans-serif;
     font-size: 32px;
@@ -23,6 +30,31 @@
     letter-spacing: 2px;
     position: relative;
     display: inline-block;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.theme-toggle:hover {
+    color: var(--text-accent);
+    border-color: var(--text-accent);
+    box-shadow: 0 0 10px rgba(40, 233, 140, 0.3);
+    transform: scale(1.1);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
 }
 
 .logo-text {
